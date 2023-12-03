@@ -1,4 +1,7 @@
 \documentclass{article}
+
+\usepackage{listings}
+
 \title{Digital Forensics with Python}
 \author{Roland Heeb}
 \date{November 2023}
@@ -7,18 +10,37 @@
 
 \section{Basic Python Syntax Element}
 % first chapter contains overview about python constructs to analyze digital forensics artefacts
+
+
+\subsubsection{Search if string contains substring}
+
+The following commands can be used to find substrings in a string. Search commands in Python are case sensitive
+therefore convert string to lowercase before applying search.
+
 \begin{itemize}
-    \item The individual entries are indicated with a black dot, a so-called bullet.
-    \item The text in the entries may be of any length.
+    \item find returns index of first occurence of substring otherwise returns -1
+    \item in returns True if string contains substring otherwise False
+    \item index returns index if string contains substring otherwise throws a ValueError
+    \item count of occurences of substring in string
 \end{itemize}
+
+\begin{lstlisting}[language=Python]
+
+print('Hello, world')
+
+\end{lstlisting}
+
+
+
+\subsection{title}
 
 
 \section{Windows Artefacts Analysis with Python}
 
 
-% \chapter{Linux Artefacts Analysis with Python}
-% \chapter{MacOS Artefacts Analysis with Python}
-% \chapter{Google Cloud Analysis with Python}
-% \chapter{Azure Analysis with Python}
-% \chapter{AWS Analysis with Python}
+% \section{title}{Linux Artefacts Analysis with Python}
+% \section{MacOS Artefacts Analysis with Python}
+% \section{Google Cloud Analysis with Python}
+% \section{Azure Analysis with Python}
+% \section{AWS Analysis with Python}
 \end{document}
